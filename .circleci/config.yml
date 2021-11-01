@@ -27,7 +27,7 @@ jobs:
           key: v1-dependencies-{{ checksum "pom.xml" }}
 
       # run tests!
-      - run: mvn verify
+      - run: mvn verify -Dcontext=chrome -Dwebdriver.driver=chrome
 
       - run:
           name: Save test results
