@@ -38,6 +38,7 @@ public class SerenityData {
 
     public enum DataKeys {
         BASE_URL,
+        BOOKING,
         THIS_ONE
     }
 }
