@@ -1,8 +1,8 @@
 package hotelbookings.tasks;
 
-import static contentmanager.SerenityData.DataKeys.BASE_URL;
+import static hotelbookings.utilities.SerenityData.DataKeys.BASE_URL;
 
-import contentmanager.SerenityData;
+import hotelbookings.utilities.SerenityData;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;

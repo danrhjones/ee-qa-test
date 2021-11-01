@@ -1,4 +1,4 @@
-package contentmanager;
+package hotelbookings.utilities;
 
 import java.util.Objects;
 import lombok.NoArgsConstructor;

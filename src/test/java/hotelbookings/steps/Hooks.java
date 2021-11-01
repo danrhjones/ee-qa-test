@@ -1,9 +1,9 @@
 package hotelbookings.steps;
 
-import static contentmanager.SerenityData.DataKeys.BASE_URL;
-import static contentmanager.SerenityData.DataKeys.THIS_ONE;
+import static hotelbookings.utilities.SerenityData.DataKeys.BASE_URL;
+import static hotelbookings.utilities.SerenityData.DataKeys.THIS_ONE;
 
-import contentmanager.SerenityData;
+import hotelbookings.utilities.SerenityData;
 import hotelbookings.exceptions.MissingDataException;
 import io.cucumber.java.Before;
 import net.serenitybdd.screenplay.actors.OnStage;
