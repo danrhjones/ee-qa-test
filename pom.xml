@@ -16,6 +16,7 @@
     <encoding>UTF-8</encoding>
     <parallel.tests>4</parallel.tests>
     <tags></tags>
+    <webdriver.driver>chrome</webdriver.driver>
     <webdriver.base.url>http://hotel-test.equalexperts.io/</webdriver.base.url>
   </properties>
   <dependencies>
