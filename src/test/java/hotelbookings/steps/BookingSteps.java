@@ -21,21 +21,21 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.*;
 
 
-public class first_steps {
+public class BookingSteps {
     @Steps
     Booking booking;
     @Steps
     SerenityData testData;
 
     @Given("^(.*) completes the booking form with his information$")
-    public void alvinCompletesTheBookingFormWithHisInformation(String actor) {
+    public void fillInBookingForm(String actor) {
         OnStage.theActorCalled(actor)
             .attemptsTo(BrowseTo.theHomePage());
         OnStage.theActorInTheSpotlight().attemptsTo(FillInTheBooking.withTheirInformation(booking.booking()));
     }
 
     @And("^he (does|does not) pay a deposit$")
-    public void heScenarioPayADeposit(String payDeposit) {
+    public void setPayDeposit(String payDeposit) {
         String depositState = payDeposit.equals("does") ? "true" : "false";
         OnStage.theActorInTheSpotlight().attemptsTo(SetDepositDropDown.to(depositState));
 
@@ -45,12 +45,12 @@ public class first_steps {
     }
 
     @When("he saves the booking")
-    public void heSavesTheBooking() {
+    public void saveBooking() {
         OnStage.theActorInTheSpotlight().attemptsTo(SaveThe.booking());
     }
 
     @Then("he should see his booking is displayed")
-    public void heShouldSeeTheBookingIsDisplayed() {
+    public void isBookingdisplayed() {
         Booking thisBooking = testData.getData(BOOKING);
         OnStage.theActorInTheSpotlight().should(EventualConsequence.eventually(
             seeThat("which is first",
