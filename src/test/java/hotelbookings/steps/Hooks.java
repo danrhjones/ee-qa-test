@@ -1,7 +1,6 @@
 package hotelbookings.steps;
 
 import static hotelbookings.utilities.SerenityData.DataKeys.BASE_URL;
-import static hotelbookings.utilities.SerenityData.DataKeys.THIS_ONE;
 
 import hotelbookings.utilities.SerenityData;
 import hotelbookings.exceptions.MissingDataException;
@@ -20,7 +19,6 @@ public class Hooks {
       @Before
       public void setTheStage() {
             OnStage.setTheStage(new OnlineCast());
-            testData.setData(THIS_ONE, "that");
             testData.setData(BASE_URL, environmentVariables.optionalProperty("webdriver.base.url")
                 .orElseThrow(() -> new MissingDataException("Missing environment property called webdriver.base.url")));
       }
