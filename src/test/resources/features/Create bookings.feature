@@ -8,5 +8,5 @@ Feature: Create a new booking.
 
     Examples:
       | scenario |
-      | does      |
-      | does not  |
+      | does     |
+      | does not |
