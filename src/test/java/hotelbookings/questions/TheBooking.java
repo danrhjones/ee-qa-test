@@ -10,11 +10,6 @@ public class TheBooking {
     public static final Target BOOKING_TABLE = Target.the("saved bookings")
         .located(By.id("bookings"));
 
-//    public static Question<List<String>> contains() {
-//        return Text.of(BOOKING_TABLE)
-//            .describedAs("the bookings displayed").asAList();
-//    }
-
     public static Question<String> contains() {
         return Text.of(BOOKING_TABLE)
             .describedAs("the bookings displayed")
