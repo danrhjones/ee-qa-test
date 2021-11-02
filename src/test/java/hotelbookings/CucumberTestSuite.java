@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
     plugin = {"pretty"},
-    tags = "not @wip or @ignore ",
+    tags = "not @ignore",
     features = "src/test/resources/features"
 )
 public class CucumberTestSuite {}
