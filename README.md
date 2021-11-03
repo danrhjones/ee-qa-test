@@ -1,22 +1,33 @@
-# TODO
+# Equal Experts QA test
 
 
-problems:
-delete tests should fail but it marked as ignore
-hardcoded auth token
-wrong http code on endpoints
+## Choice of tools
 
+For this project, I decided to use [Serenity](https://serenity-bdd.info/) framework. 
 
-why use screenplay and serenity?
+It has built in support for dependency injection, it uses Rest Assured, the reporting works out of the box, and I like the way that it supports the [Screenplay pattern](https://serenity-bdd.github.io/theserenitybook/latest/serenity-screenplay.html), which in, my opinion, makes step defs easy to read
 
-reports are cool
-like the way the tasks  and questiosn read
-has DI built in, and rest assured
+## Run the tests
 
-todo
-add some more manual tests
+### To run the tests locally
 
+clone the repo
+then run `mvn verify`
 
-## how to run tests
+To view the report, open `./target/site/serenity/index.html` in a browser 
 
-## link to circle ci
+### CI
+
+I have added a basic CircleCi config, and the runs can be found [here](https://app.circleci.com/pipelines/github/danrhjones/ee-qa-test)
+
+## Manual tests
+
+Serenity allows you to flag cucumber scenarios as manual tests. This allows them to be included in the report and still be considered as part of the 'single source of truth'
+
+These tests are tagged with `@manual`
+
+Some of these are failing tests, as, in the absence of requirements, I made some assumptions about how the site should work
+
+## Possible bugs found
+
+Some possible bugs are listed in [here](Problems.md)
