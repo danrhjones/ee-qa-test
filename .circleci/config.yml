@@ -1,6 +1,7 @@
 version: 2
 jobs:
-  build:
+  testing:
+
     docker:
       - image: circleci/openjdk:8u171-jdk-browsers
     working_directory: ~/repo
@@ -40,3 +41,10 @@ jobs:
           path: ~/test-results
       - store_artifacts:
           path: ~/test-results/serenity
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - testing
+
