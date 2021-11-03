@@ -22,5 +22,6 @@
 - The site is not responsive, so shrinking the browser renders the site unusable
 - No success or error messages displayed on the UI
 - No labels on fields
+- No validation on field length, long names can be entered, which overfills the column
 - No pagination on results
-
+- Looks like there is a timeout on returning data, which is set using a random number

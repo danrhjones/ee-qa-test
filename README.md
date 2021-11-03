@@ -20,6 +20,8 @@ To view the report, open `./target/site/serenity/index.html` in a browser
 
 I have added a basic CircleCi config, and the runs can be found [here](https://app.circleci.com/pipelines/github/danrhjones/ee-qa-test)
 
+The tests currently run on Chrome, but it wouldn't be too much of a problem to run them on a range of browsers for compatibility testing
+
 ## Manual tests
 
 Serenity allows you to flag cucumber scenarios as manual tests. This allows them to be included in the report and still be considered as part of the 'single source of truth'
