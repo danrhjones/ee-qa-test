@@ -3,7 +3,7 @@
 
 ## Choice of tools
 
-For this project, I decided to use [Serenity](https://serenity-bdd.info/) framework. 
+For this project, I used the [Serenity](https://serenity-bdd.info/) framework. 
 
 It has built in support for dependency injection, it uses Rest Assured, the reporting works out of the box, and I like the way that it supports the [Screenplay pattern](https://serenity-bdd.github.io/theserenitybook/latest/serenity-screenplay.html), which in, my opinion, makes step defs easy to read
 
