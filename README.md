@@ -16,7 +16,7 @@ then run `mvn verify`
 
 To view the report, open `./target/site/serenity/index.html` in a browser 
 
-### CI
+## CI
 
 I have added a basic CircleCi config, and the runs can be found [here](https://app.circleci.com/pipelines/github/danrhjones/ee-qa-test)
 
